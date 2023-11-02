@@ -27,9 +27,16 @@ class _HomeScreenState extends State<HomeScreen> {
     ),
     const Marker(
         markerId: MarkerId("2"),
-     position:  LatLng(23.8759, 90.3791),
+     position:  LatLng(23.8759, 90.375),
     infoWindow: InfoWindow(
       title: "Uttara2"
+    )
+    ),
+    const Marker(
+        markerId: MarkerId("22"),
+     position:  LatLng(23.8756, 90.373),
+    infoWindow: InfoWindow(
+      title: "Uttara22"
     )
     ),
     const Marker(
@@ -52,15 +59,26 @@ class _HomeScreenState extends State<HomeScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: GoogleMap(
-       initialCameraPosition: _kGooglePlex,
+    return SafeArea(
+      child: Scaffold(
+        body: GoogleMap(
+         initialCameraPosition: _kGooglePlex,
 
-        mapType: MapType.normal,
-       markers: Set<Marker>.of(_marker),
-        onMapCreated: (GoogleMapController controller){
-          _controller.complete(controller);
-        },
+          mapType: MapType.normal,
+         markers: Set<Marker>.of(_marker),
+          onMapCreated: (GoogleMapController controller){
+            _controller.complete(controller);
+          },
+        ),
+        floatingActionButton: FloatingActionButton(
+          child: Icon(Icons.my_location),
+          onPressed: ()async{
+            GoogleMapController controller = await _controller.future;
+            controller.animateCamera(CameraUpdate.newCameraPosition(CameraPosition(target: LatLng(23.7461, 90.3742),
+            zoom: 14
+            )));
+          },
+        ),
       ),
     );
   }
