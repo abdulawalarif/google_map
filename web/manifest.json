@@ -1,6 +1,6 @@
 {
-    "name": "google_map_learning_project",
-    "short_name": "google_map_learning_project",
+    "name": "google_map",
+    "short_name": "google_map",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:google_map_learning_project/home_screen.dart';
+import 'package:google_map/home_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,4 +16,3 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-
