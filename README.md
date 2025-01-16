@@ -1,16 +1,85 @@
-# google_map
 
-A new Flutter project.
+# Map app with Flutter Dart and Firebase
 
-## Getting Started
+## This   project is for u 
+**It's a**
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Features
+ * **Pace :**
+  - Deatailed view
+  - Recomendations
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+
+## File structure
+
+    
+    ├── lib
+    │   ├── main.dart                  
+     
+ 
+<img src="ProjectSnap/location.jpg" width="15%" alt="Demo of this application" /> 
+</br>
+
+ 
+ 
+
+
+
+ 
+
+## Run Locally
+
+Clone the project
+
+```bash
+  git clone https://github.com/abdulawalarif/google_map.git
+```
+
+
+Go to the project directory
+
+```bash
+  cd google_map
+```
+
+Install dependencies
+
+```bash
+  flutter pub get
+```
+
+Connect a physical device or start a virtual device on your machine
+
+```bash
+  flutter run
+```
+
+
+
+## How to tweak this project for your own uses
+* **Setup Map API:** Add map apikey..
+
+
+ 
+
+## Reporting Bugs or Requesting Features?
+
+If you found an issue or would like to submit an improvement to this project,
+please submit an issue using the issues tab above. If you would like to submit a PR with a fix, reference the issue you created!
+
+##  Known Issues and Future Work
+* **Some Issues are herer:** There must be some issu to always improve and prove that i am also a human but dart and black.
+ 
+
+## Author
+
+- [@abdulawalarif](https://github.com/abdulawalarif) 
+ 
+  
+## License
+
+
+The MIT License [MIT](https://choosealicense.com/licenses/mit/). Please view the [License](LICENSE) File for more information.
